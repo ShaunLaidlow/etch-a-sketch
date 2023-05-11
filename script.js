@@ -61,8 +61,12 @@ button.addEventListener("click",function(){
 
 
 function chooseGrid(){
-    row = prompt("How many rows do you want?")
-    col = prompt("How many columns?")
+    do{
+        row = prompt("How many rows do you want?")
+        col = prompt("How many columns?")
+    }
+    while(row > 100 || col > 100)
+    
     deleteGrid()
     createGrid(row,col)
     listenBoxes()
