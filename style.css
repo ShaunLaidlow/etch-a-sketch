@@ -1,0 +1,10 @@
+.box{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(0, 0, 0);
+    filter: brightness(1);
+}
+
+.container{
+    display: flex;
+}
